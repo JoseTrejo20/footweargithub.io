@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Tienda de Zapatos</title>
+  <link rel="stylesheet" href="estilos/navbar.css" />
+  <link rel="stylesheet" href="estilos/contacto.css" />
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="FOOTWEAR" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tennis.html">Tennis</a></li>
+      <li><a href="zapatos.html">Zapatos</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+      <li><a href="creditos.html">Créditos</a></li>
+    </ul>
+  </nav>
+
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+        <p>&copy; 2025 Tienda de Calzado FOOTWEAR. </p>
+    </footer>
+</body>
+</html>
