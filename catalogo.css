@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #192a56;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Catálogo en cuadrícula */
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Efecto al pasar el mouse */
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.producto img {
+  width: 100%;
+  height: 180px;             /* Tamaño fijo equilibrado */
+  object-fit: contain;       /* Muestra el producto completo */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: brightness(96%) contrast(104%);
+}
+
+.producto img:hover {
+  transform: scale(1.05);
+  filter: brightness(100%) contrast(110%);
+}
+
+.producto h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #192a56;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Precio */
+.precio {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #d4af37; /* Dorado elegante */
+  font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #192a56;
+  color: white;
+  margin-top: 40px;
+}
+
+
+
